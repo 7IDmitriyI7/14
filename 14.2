@@ -1,0 +1,28 @@
+using System;
+
+namespace _14._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите А");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите B(<A)");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a > 0 && b > 0 && a > b)
+            {
+                for(int i = 0; i <= a; i =+ b)
+                {
+                    a =a-b;
+                    
+                }
+                Console.WriteLine("Свободно "+a+" ед");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода");
+            }
+        }
+    }
+}
