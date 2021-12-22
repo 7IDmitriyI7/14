@@ -1,0 +1,41 @@
+using System;
+
+namespace _14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите А");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите B(>A)");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a > 0 && b > 0 && a < b)
+            {
+
+                //for (int i = 1; i <= a; i++)
+                //{
+                //    Console.WriteLine(a);
+                //}
+
+                //for (int j = 1; j <= b; j++)
+                //{
+                //    Console.WriteLine(b);
+                //}
+
+                for(int i=a; i<=b; i++)
+                {
+                    for(int i2=1; i2<=i; i2++)
+                    {
+                        Console.WriteLine(" "+i);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода");
+            }
+
+        }
+    }
+}
