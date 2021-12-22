@@ -1,0 +1,28 @@
+using System;
+
+namespace _14._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите процент");
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = 1000;
+            int m = 0;
+            if (a > 0 && a < 25)
+            {
+
+                while (b <= 1100)
+                {
+                    m = m + 1;
+                    double p = a / 100 * b;
+                    b = b + p;
+                }
+
+                Console.WriteLine("Через " + m + " месяцев будет " + b);
+            }
+            else { Console.WriteLine("Ошибка ввода"); }
+        }
+    }
+}
