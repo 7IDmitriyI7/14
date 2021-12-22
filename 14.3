@@ -1,0 +1,21 @@
+using System;
+
+namespace _14._3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите N>1");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int k = 0, s = 0;
+            while (s < n)
+            {
+                k++;
+                s += k;
+            }
+            Console.WriteLine("Наименьшее из целых чисел K, для которых сумма 1 + 2 + ... + K будет больше или равна N:   " + k);
+            Console.WriteLine("Сумма "+s);
+        }
+    }
+}
